@@ -46,3 +46,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+####### ADDED GEMS ##########
+gem 'hirb'
+# gem 'quiet_assets', group: :development
+gem 'better_errors', group: :development
+gem 'meta_request', group: :development
+gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'react-rails'
