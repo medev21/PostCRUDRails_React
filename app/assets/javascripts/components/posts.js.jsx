@@ -8,10 +8,19 @@ var Posts = React.createClass({
       return { posts: [] }
   },
 
+  addPost: function(post){
+    posts = this.state.posts.slice()
+    posts.push(post)
+    this.setState({ posts: posts})
+  },
+
   render: function(){
     return(
       <div className="posts">
         <h1 className="title">Posts</h1>
+
+        <PostForm handleNewPost={this.addPost} />
+
         <div className="row">
           <div className="col-md-4">Date</div>
           <div className="col-md-4">Post Name</div>
