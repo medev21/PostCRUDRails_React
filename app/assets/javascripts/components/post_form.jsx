@@ -36,15 +36,15 @@ var PostForm = React.createClass({
       <form className="form-inline" onSubmit={this.handleSubmit}>
         <div className="form-group">
           <label for="date">Date:</label>
-          <input type="date" className="form-control" id="date" name="date" onChange={this.handleChange}></input>
+          <input value={this.state.date} type="date" className="form-control" id="date" name="date" onChange={this.handleChange}></input>
         </div>
         <div className="form-group">
           <label for="title">Title:</label>
-          <input type="text" className="form-control" id="title" name="title" onChange={this.handleChange}></input>
+          <input value={this.state.title} type="text" className="form-control" id="title" name="title" onChange={this.handleChange}></input>
         </div>
         <div className="form-group">
           <label for="description">Description:</label>
-          <input type="text" className="form-control" id="description" name="description" onChange={this.handleChange}></input>
+          <input  value={this.state.description} type="text" className="form-control" id="description" name="description" onChange={this.handleChange}></input>
         </div>
         <button type="submit" className="btn btn-default" disabled={!this.valid()}>Submit</button>
       </form>
